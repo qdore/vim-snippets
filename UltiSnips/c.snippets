@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
 endsnippet
 
 snippet for "for loop (for)"
-for (${1:int i} = ${2:0}; ${3:i} < ${4:count}; ${5:++i}) {
+for (${1:int} ${2:`!p snip.rv = "i"`} = ${3:0}; $2 < ${4:count}; ++$2) {
     ${VISUAL}${6}
 }
 endsnippet
